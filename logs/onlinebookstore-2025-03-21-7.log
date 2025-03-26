@@ -1,0 +1,159 @@
+2025-03-21T08:11:18.719+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-7] c.d.onlinebookstore.service.BookService  : Retrieved 2 books
+2025-03-21T08:11:18.727+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-7] c.d.o.controller.BookController          : Returning 2 books
+2025-03-21T08:12:32.243+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-10] c.d.o.controller.BookController          : Received request to fetch book with ID: 2
+2025-03-21T08:12:32.243+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-10] c.d.onlinebookstore.service.BookService  : Fetching book with ID: 2
+2025-03-21T08:12:32.266+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-10] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.price,
+        b1_0.published_date,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.id=?
+2025-03-21T08:12:32.274+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-10] c.d.o.controller.BookController          : Returning book with ID : 2
+2025-03-21T08:13:30.267+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-8] c.d.o.controller.BookController          : Received request to update book with ID: 1
+2025-03-21T08:13:30.267+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-8] c.d.onlinebookstore.service.BookService  : Updating book with ID: 1
+2025-03-21T08:13:30.277+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-8] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.price,
+        b1_0.published_date,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.id=?
+2025-03-21T08:13:30.283+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-8] c.d.onlinebookstore.service.BookService  : Updating details for book ID: 1
+2025-03-21T08:13:30.300+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-8] org.hibernate.SQL                        : 
+    update
+        books 
+    set
+        author=?,
+        price=?,
+        published_date=?,
+        title=? 
+    where
+        id=?
+2025-03-21T08:13:30.308+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-8] c.d.onlinebookstore.service.BookService  : Book with ID 1 updated successfully
+2025-03-21T08:13:30.316+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-8] c.d.o.controller.BookController          : Book with ID 1 updated successfully
+2025-03-21T08:13:43.038+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-1] c.d.o.controller.BookController          : Received request to update book with ID: 1
+2025-03-21T08:13:43.038+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-1] c.d.onlinebookstore.service.BookService  : Updating book with ID: 1
+2025-03-21T08:13:43.038+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-1] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.price,
+        b1_0.published_date,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.id=?
+2025-03-21T08:13:43.048+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-1] c.d.onlinebookstore.service.BookService  : Updating details for book ID: 1
+2025-03-21T08:13:43.048+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-1] org.hibernate.SQL                        : 
+    update
+        books 
+    set
+        author=?,
+        price=?,
+        published_date=?,
+        title=? 
+    where
+        id=?
+2025-03-21T08:13:43.062+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-1] c.d.onlinebookstore.service.BookService  : Book with ID 1 updated successfully
+2025-03-21T08:13:43.062+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-1] c.d.o.controller.BookController          : Book with ID 1 updated successfully
+2025-03-21T08:15:15.253+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-4] c.d.o.controller.BookController          : Received request to delete book with ID: 1
+2025-03-21T08:15:15.258+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-4] c.d.onlinebookstore.service.BookService  : Deleting book with ID: 1
+2025-03-21T08:15:15.819+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-4] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        books b1_0 
+    where
+        b1_0.id=?
+2025-03-21T08:15:15.827+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-4] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.price,
+        b1_0.published_date,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.id=?
+2025-03-21T08:15:15.835+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-4] org.hibernate.SQL                        : 
+    delete 
+    from
+        books 
+    where
+        id=?
+2025-03-21T08:15:15.859+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-4] c.d.onlinebookstore.service.BookService  : Book with ID 1 deleted successfully
+2025-03-21T08:15:15.859+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-4] c.d.o.controller.BookController          : Book with ID 1 deleted successfully
+2025-03-21T08:16:29.763+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-5] c.d.o.controller.BookController          : Received request to update book with ID: 2
+2025-03-21T08:16:29.766+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-5] c.d.onlinebookstore.service.BookService  : Updating book with ID: 2
+2025-03-21T08:16:29.766+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-5] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.price,
+        b1_0.published_date,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.id=?
+2025-03-21T08:16:29.775+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-5] c.d.onlinebookstore.service.BookService  : Updating details for book ID: 2
+2025-03-21T08:16:29.775+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-5] org.hibernate.SQL                        : 
+    update
+        books 
+    set
+        author=?,
+        price=?,
+        published_date=?,
+        title=? 
+    where
+        id=?
+2025-03-21T08:16:29.783+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-5] c.d.onlinebookstore.service.BookService  : Book with ID 2 updated successfully
+2025-03-21T08:16:29.790+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-5] c.d.o.controller.BookController          : Book with ID 2 updated successfully
+2025-03-21T08:16:35.333+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-9] c.d.o.controller.BookController          : Received request to update book with ID: 2
+2025-03-21T08:16:35.333+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-9] c.d.onlinebookstore.service.BookService  : Updating book with ID: 2
+2025-03-21T08:16:35.341+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-9] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.price,
+        b1_0.published_date,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.id=?
+2025-03-21T08:16:35.344+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-9] c.d.onlinebookstore.service.BookService  : Updating details for book ID: 2
+2025-03-21T08:16:35.349+05:30 DEBUG 10952 --- [OnlineBookStore] [http-nio-8090-exec-9] org.hibernate.SQL                        : 
+    update
+        books 
+    set
+        author=?,
+        price=?,
+        published_date=?,
+        title=? 
+    where
+        id=?
+2025-03-21T08:16:35.364+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-9] c.d.onlinebookstore.service.BookService  : Book with ID 2 updated successfully
+2025-03-21T08:16:35.364+05:30  INFO 10952 --- [OnlineBookStore] [http-nio-8090-exec-9] c.d.o.controller.BookController          : Book with ID 2 updated successfully
+2025-03-21T08:18:41.717+05:30  INFO 10952 --- [OnlineBookStore] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-03-21T08:18:41.720+05:30  INFO 10952 --- [OnlineBookStore] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21T08:18:41.728+05:30  INFO 10952 --- [OnlineBookStore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-21T08:18:41.735+05:30  INFO 10952 --- [OnlineBookStore] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-21T08:18:41.739+05:30  INFO 10952 --- [OnlineBookStore] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-21T08:18:41.754+05:30  INFO 10952 --- [OnlineBookStore] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-21T08:18:46.139+05:30  INFO 700 --- [OnlineBookStore] [main] c.d.o.OnlineBookStoreApplication         : Starting OnlineBookStoreApplication using Java 23.0.2 with PID 700 (C:\Users\Sivanesh.C\eclipse-workspace\OnlineBookStore\target\classes started by Sivanesh.C in C:\Users\Sivanesh.C\eclipse-workspace\OnlineBookStore)
+2025-03-21T08:18:46.141+05:30 DEBUG 700 --- [OnlineBookStore] [main] c.d.o.OnlineBookStoreApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-21T08:18:46.143+05:30  INFO 700 --- [OnlineBookStore] [main] c.d.o.OnlineBookStoreApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-21T08:18:46.946+05:30  INFO 700 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-21T08:18:47.029+05:30  INFO 700 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.

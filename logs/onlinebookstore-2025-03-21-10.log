@@ -1,0 +1,65 @@
+2025-03-21T10:01:22.606+05:30  INFO 23112 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-21T10:01:22.679+05:30  INFO 23112 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-03-21T10:01:23.294+05:30  INFO 23112 --- [OnlineBookStore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-21T10:01:23.380+05:30  INFO 23112 --- [OnlineBookStore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-21T10:01:23.420+05:30  INFO 23112 --- [OnlineBookStore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-21T10:01:23.819+05:30  INFO 23112 --- [OnlineBookStore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-21T10:01:23.882+05:30  INFO 23112 --- [OnlineBookStore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-21T10:01:24.331+05:30  INFO 23112 --- [OnlineBookStore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14656be5
+2025-03-21T10:01:24.339+05:30  INFO 23112 --- [OnlineBookStore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-21T10:01:24.407+05:30  WARN 23112 --- [OnlineBookStore] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-21T10:01:24.410+05:30  WARN 23112 --- [OnlineBookStore] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-21T10:01:24.435+05:30  INFO 23112 --- [OnlineBookStore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-21T10:01:25.297+05:30  INFO 23112 --- [OnlineBookStore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-21T10:01:25.344+05:30  INFO 23112 --- [OnlineBookStore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-21T10:01:26.036+05:30  WARN 23112 --- [OnlineBookStore] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-21T10:01:26.698+05:30  INFO 23112 --- [OnlineBookStore] [main] c.d.o.service.BookServiceTest            : Started BookServiceTest in 5.408 seconds (process running for 6.692)
+2025-03-21T10:01:27.374+05:30  INFO 23112 --- [OnlineBookStore] [main] c.d.onlinebookstore.service.BookService  : Fetching book with ID: 1
+2025-03-21T10:01:27.411+05:30  INFO 23112 --- [OnlineBookStore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-21T10:01:27.413+05:30  INFO 23112 --- [OnlineBookStore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-21T10:01:27.425+05:30  INFO 23112 --- [OnlineBookStore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-21T10:01:37.050+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookControllerTest      : Starting BookControllerTest using Java 23.0.2 with PID 17648 (started by Sivanesh.C in C:\Users\Sivanesh.C\eclipse-workspace\OnlineBookStore)
+2025-03-21T10:01:37.051+05:30 DEBUG 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookControllerTest      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-21T10:01:37.052+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-03-21T10:01:39.611+05:30  INFO 17648 --- [OnlineBookStore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-21T10:01:39.612+05:30  INFO 17648 --- [OnlineBookStore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-21T10:01:39.614+05:30  INFO 17648 --- [OnlineBookStore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-03-21T10:01:39.695+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookControllerTest      : Started BookControllerTest in 3.173 seconds (process running for 4.388)
+2025-03-21T10:01:40.039+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to add a new book
+2025-03-21T10:01:40.045+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Book added successfully with ID: 1
+2025-03-21T10:01:40.187+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to fetch all books
+2025-03-21T10:01:40.187+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Returning 2 books
+2025-03-21T10:01:40.214+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to update book with ID: 1
+2025-03-21T10:01:40.216+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Book with ID 1 updated successfully
+2025-03-21T10:01:40.227+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to fetch book with ID: 1
+2025-03-21T10:01:40.227+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Returning book with ID : 1
+2025-03-21T10:01:40.248+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to delete book with ID: 1
+2025-03-21T10:01:40.248+05:30  INFO 17648 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Book with ID 1 deleted successfully
+2025-03-21T10:07:28.241+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookControllerTest      : Starting BookControllerTest using Java 23.0.2 with PID 12392 (started by Sivanesh.C in C:\Users\Sivanesh.C\eclipse-workspace\OnlineBookStore)
+2025-03-21T10:07:28.242+05:30 DEBUG 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookControllerTest      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-21T10:07:28.244+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-03-21T10:07:30.782+05:30  INFO 12392 --- [OnlineBookStore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-21T10:07:30.784+05:30  INFO 12392 --- [OnlineBookStore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-21T10:07:30.787+05:30  INFO 12392 --- [OnlineBookStore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-03-21T10:07:30.860+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookControllerTest      : Started BookControllerTest in 3.155 seconds (process running for 4.422)
+2025-03-21T10:07:31.231+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to add a new book
+2025-03-21T10:07:31.240+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Book added successfully with ID: 1
+2025-03-21T10:07:31.379+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to fetch all books
+2025-03-21T10:07:31.380+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Returning 2 books
+2025-03-21T10:07:31.412+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to update book with ID: 1
+2025-03-21T10:07:31.414+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Book with ID 1 updated successfully
+2025-03-21T10:07:31.422+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to fetch book with ID: 1
+2025-03-21T10:07:31.422+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Returning book with ID : 1
+2025-03-21T10:07:31.430+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Received request to delete book with ID: 1
+2025-03-21T10:07:31.431+05:30  INFO 12392 --- [OnlineBookStore] [main] c.d.o.controller.BookController          : Book with ID 1 deleted successfully
+2025-03-21T11:22:03.740+05:30  INFO 18948 --- [OnlineBookStore] [main] c.d.o.OnlineBookStoreApplication         : Starting OnlineBookStoreApplication using Java 23.0.2 with PID 18948 (C:\Users\Sivanesh.C\eclipse-workspace\OnlineBookStore\target\classes started by Sivanesh.C in C:\Users\Sivanesh.C\eclipse-workspace\OnlineBookStore)
+2025-03-21T11:22:03.744+05:30 DEBUG 18948 --- [OnlineBookStore] [main] c.d.o.OnlineBookStoreApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-21T11:22:03.747+05:30  INFO 18948 --- [OnlineBookStore] [main] c.d.o.OnlineBookStoreApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-21T11:22:05.053+05:30  INFO 18948 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
